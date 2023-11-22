@@ -35,7 +35,16 @@ public class Queue {
         return rear - front + 1;
     }
 
+    public void clear(){
+        front = -1;
+        rear = -1;
+    }
+
     public void printQueue(){
+        if (isEmpty()){
+            System.out.println("Queue is Empty !");
+            return;
+        }
         System.out.print("[ ");
         for (int i = front; i <= rear ; i++) {
             System.out.print(elementData[i] + "  ");
@@ -54,5 +63,9 @@ public class Queue {
         for (int i = 0; i < temp.length; i++) {
             elementData[i] = temp[i];
         }
+    }
+
+    public boolean isEmpty(){
+        return front == -1;
     }
 }
