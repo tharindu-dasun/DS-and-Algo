@@ -20,5 +20,9 @@ public class Main {
         linkedList.deleteAtBegining();
 
         linkedList.deleteAtEnding();
+
+        linkedList.deleteAtPosition(2);
+
+        linkedList.traverse();
     }
 }
