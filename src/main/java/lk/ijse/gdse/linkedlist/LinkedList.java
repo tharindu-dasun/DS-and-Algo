@@ -93,4 +93,25 @@ public class LinkedList {
         }
         temp.next = temp.next.next;
     }
+
+    public int size(){  // complete naaa
+        int count = 0;
+
+        Node temp = head;
+
+        return count;
+    }
+
+    public int get(int position){
+        if (head == null){
+            System.err.println("List is empty");
+            return -1;
+        }
+
+        Node temp = head;
+        for (int i = 0; i < position; i++) {
+            temp = temp.next;
+        }
+        return temp.data;
+    }
 }

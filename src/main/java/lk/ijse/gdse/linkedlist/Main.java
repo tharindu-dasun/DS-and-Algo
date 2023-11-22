@@ -24,5 +24,9 @@ public class Main {
         linkedList.deleteAtPosition(2);
 
         linkedList.traverse();
+
+        System.out.println("Size" + linkedList.size());
+
+        System.out.println("get(2)" + linkedList.get(2));
     }
 }
