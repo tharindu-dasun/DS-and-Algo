@@ -16,5 +16,9 @@ public class Main {
         linkedList.insertAtPosition(50 , 2);
 
         linkedList.traverse();
+
+        linkedList.deleteAtBegining();
+
+        linkedList.deleteAtEnding();
     }
 }
