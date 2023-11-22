@@ -27,4 +27,29 @@ public class LinkedList {
         }
         temp.next = node;
     }
+
+    public void traverse(){
+        Node temp = head;
+
+        System.out.print("[");
+        while (temp.next != null){
+            System.out.print(temp.data + ",");
+            temp = temp.next;
+        }
+        System.out.print("\b\b]");
+    }
+
+    public void insertAtPosition(int data , int position){
+        if (position==0){
+            insertAtBegining(data);
+            return;
+        }
+        Node node = new Node(data);
+        Node temp = head;
+        for (int i = 0; i < position; i++) {
+            temp =temp.next;
+        }
+        node.next = temp.next;
+        temp.next = node;
+    }
 }

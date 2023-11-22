@@ -11,6 +11,10 @@ public class Main {
 
         linkedList.insertAtEnding(50);
 
-        linkedList.printNode();
+        linkedList.traverse();
+
+        linkedList.insertAtPosition(50 , 2);
+
+        linkedList.traverse();
     }
 }
