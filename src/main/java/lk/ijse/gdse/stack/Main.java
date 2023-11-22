@@ -1,4 +1,4 @@
-package lk.ijse.gdse;
+package lk.ijse.gdse.stack;
 
 public class Main {
     public static void main(String[] args) {
